@@ -1,6 +1,9 @@
 package values
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func CheckVals() {
 	fmt.Println("shiva" + "go")
@@ -84,5 +87,63 @@ func Loops() {
 	}
 
 	// aa = 250
+
+}
+
+func IfElse() {
+	if n := 6; n == 7 {
+		fmt.Printf("n %v,\n", n)
+	} else {
+		fmt.Printf("m  else %v\n", n)
+	}
+}
+
+func SwithCase() {
+
+	const i int = 2
+
+	switch i {
+	case 1, 2, 3:
+		fmt.Println("1 2 or 3")
+	case 5:
+		fmt.Println("Its 5")
+	default:
+		fmt.Println("Unknown")
+	}
+
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("Weekend")
+	default:
+		fmt.Println("Not Weekend")
+	}
+
+	switch {
+	case 2 > 4:
+		fmt.Println("2 is greater than 1")
+	default:
+		fmt.Println("No its Not")
+	}
+
+	checkType := func(i interface{}) {
+
+		switch i.(type) {
+		case string:
+			fmt.Println("Its a string")
+		case int:
+			fmt.Println("Its a Integer")
+		case bool:
+			fmt.Println("Its a boolean")
+		default:
+			fmt.Println("Unidentified")
+		}
+	}
+
+	const mm = "shiva"
+
+	checkType(mm)
+	checkType(false)
+	checkType(25)
+	checkType(25.5)
 
 }

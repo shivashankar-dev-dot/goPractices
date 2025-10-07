@@ -13,5 +13,7 @@ func main() {
 	// aa.CheckVals()
 	// a.Vars()
 	// a.Consts()
-	a.Loops()
+	// a.Loops()
+	// a.IfElse()
+	a.SwithCase()
 }
