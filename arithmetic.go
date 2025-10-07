@@ -15,5 +15,6 @@ func main() {
 	// a.Consts()
 	// a.Loops()
 	// a.IfElse()
-	a.SwithCase()
+	// a.SwithCase()
+	a.Arrays()
 }

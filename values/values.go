@@ -147,3 +147,38 @@ func SwithCase() {
 	checkType(25.5)
 
 }
+
+func Arrays() {
+	var a [5]int
+
+	fmt.Printf("Before %v\n", a)
+
+	a[2] = 3
+
+	fmt.Printf("After %v\n", a)
+
+	var b = [5]int{1, 2, 3, 4, 5}
+
+	fmt.Printf("b %v %v\n", b, len(b))
+
+	c := [...]int{1, 2, 3}
+
+	fmt.Printf("c %v %v\n", c, len(c))
+
+	var ab [2][3]int
+
+	for i := range 2 {
+		for j := range 3 {
+			ab[i][j] = j + 1
+		}
+	}
+	fmt.Println(ab)
+
+	var abc = [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+
+	fmt.Println(abc)
+
+}
