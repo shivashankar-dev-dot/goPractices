@@ -25,6 +25,25 @@ func Vars() {
 
 	check := false
 
-	fmt.Print(check)
+	fmt.Println(check)
+
+	var (
+		narendra int     = 420
+		shiva    string  = "good boy"
+		hema     float32 = 45.56
+	)
+
+	fmt.Printf("narendra %v shiva %v hema %v", narendra, shiva, hema)
+
+}
+
+func Consts() {
+
+	const aa int = 20050
+	fmt.Printf("check=%v", aa)
+
+	// aa = 250
+
+	fmt.Printf("check2=%v", aa)
 
 }
