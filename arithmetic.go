@@ -16,5 +16,6 @@ func main() {
 	// a.Loops()
 	// a.IfElse()
 	// a.SwithCase()
-	a.Arrays()
+	// a.Arrays()
+	a.Slices()
 }

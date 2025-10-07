@@ -2,6 +2,7 @@ package values
 
 import (
 	"fmt"
+	"slices"
 	"time"
 )
 
@@ -180,5 +181,57 @@ func Arrays() {
 	}
 
 	fmt.Println(abc)
+
+}
+
+func Slices() {
+
+	var a []int
+
+	fmt.Println(a)
+
+	var b = make([]string, 3)
+
+	fmt.Println(b)
+
+	b[0] = "3"
+	b[1] = "2"
+	b[2] = "4"
+
+	b = append(b, "shiva", "hema")
+
+	fmt.Println(b)
+
+	//copy
+
+	c := make([]string, len(b))
+
+	copy(c, b)
+
+	fmt.Printf("b: %v, c:%v\n", b, c)
+
+	l := b[2:5]
+
+	fmt.Printf("l %v\n", l)
+
+	f := b[:2]
+
+	fmt.Printf("f %v\n", f)
+
+	if slices.Equal(b, c) {
+		fmt.Println("They are equal")
+	}
+
+	twoD := make([][]int, 3)
+
+	for i := range 3 {
+		innerLen := i + 1
+		twoD[i] = make([]int, innerLen)
+		for j := range innerLen {
+			twoD[i][j] = i + j
+		}
+	}
+
+	fmt.Println(twoD)
 
 }
