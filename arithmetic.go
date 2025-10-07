@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	aa "github.com/shivashankar-dev-dot/goPractices/values"
+a	"github.com/shivashankar-dev-dot/goPractices/values"
 )
 
 func add(a int, b int) int {
@@ -12,5 +12,6 @@ func add(a int, b int) int {
 
 func main() {
 	fmt.Print(add(4, 5))
-	aa.CheckVals()
+	// aa.CheckVals()
+	a.Vars()
 }
