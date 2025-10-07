@@ -47,3 +47,42 @@ func Consts() {
 	fmt.Printf("check2=%v", aa)
 
 }
+
+func Loops() {
+
+	// i := 0
+	// for i <= 3 {
+	// 	fmt.Println(i)
+	// 	i = i + 1
+	// }
+
+	// for j := 0; j <= 5; j++ {
+	// 	fmt.Printf("Value:%v \n", j)
+	// }
+
+	// for i := range 3 {
+	// 	fmt.Printf("3rd loop %v\n", i)
+	// }
+	// c := 0
+	// for {
+	// 	fmt.Printf("print %v\n", c)
+	// 	if c == 4 {
+	// 		break
+	// 	}
+	// 	c = c + 1
+	// }
+	for d := range 20 {
+		if d == 2 {
+			continue
+		}
+		fmt.Printf("print %v\n", d)
+
+		if d == 10 {
+			break
+		}
+
+	}
+
+	// aa = 250
+
+}
